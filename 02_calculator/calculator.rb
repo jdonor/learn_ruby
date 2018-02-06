@@ -14,3 +14,7 @@ end
 def multiply numbers
     numbers.size > 0 ? numbers.reduce(1, :*) : 0
 end
+
+def power a, b
+    a**b
+end
