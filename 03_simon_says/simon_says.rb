@@ -19,3 +19,7 @@ end
 def start_of_word word, letter
     word[0..letter - 1]
 end
+
+def first_word input
+    input.split(" ").first
+end
