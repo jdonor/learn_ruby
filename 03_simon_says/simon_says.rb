@@ -23,3 +23,14 @@ end
 def first_word input
     input.split(" ").first
 end
+
+def titleize input
+    little_words = ["and", "of", "the", "over"]
+    input.split(" ").map.with_index do |word, index|
+        if (little_words.include? word and not index == 0)
+            word
+        else
+            word.capitalize
+        end
+    end .join(" ")
+end
