@@ -18,3 +18,11 @@ end
 def power a, b
     a**b
 end
+
+def factorial number
+    if number < 2
+        return 1
+    end
+
+    return number * factorial(number - 1)
+end
