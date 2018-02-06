@@ -10,3 +10,7 @@ end
 def sum numbers
     numbers.size > 0 ? numbers.reduce(:+) : 0
 end
+
+def multiply numbers
+    numbers.size > 0 ? numbers.reduce(1, :*) : 0
+end
